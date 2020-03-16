@@ -29,7 +29,7 @@ public class MetodCola {
 			aux.desacolar();
 		}
 	}
-	public static void InvertirCola(ColaTDA cola) {//inivierte los contenidos de una Cola
+	public static void InvertirCola(ColaTDA cola) {//invierte los contenidos de una Cola
 		ColaTDA aux=new ColaArr();
 		aux.incializarCola();
 		while(!cola.colaVacia()) {
