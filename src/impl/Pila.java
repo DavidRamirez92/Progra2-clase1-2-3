@@ -2,7 +2,7 @@ package impl;
 
 import api.PilaTDA;
 
-public class PilaArr implements PilaTDA {
+public class Pila implements PilaTDA {
     int []a;
     int indice;
 	

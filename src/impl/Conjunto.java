@@ -2,7 +2,7 @@ package impl;
 
 import api.ConjuntoTDA;
 
-public class ConjuntoArr implements ConjuntoTDA {
+public class Conjunto implements ConjuntoTDA {
     
 	int [] a;
 	int cant;

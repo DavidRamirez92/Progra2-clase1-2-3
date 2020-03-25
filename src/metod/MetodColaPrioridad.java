@@ -1,5 +1,5 @@
 package metod;
-import impl.ColaPrioridadArr;
+import impl.ColaPrioridad;
 import api.ColaPrioridadTDA;
 
 public class MetodColaPrioridad {
@@ -9,7 +9,7 @@ public class MetodColaPrioridad {
 		}
 	}
 	public static void CopiarColaPrioridad(ColaPrioridadTDA origen,ColaPrioridadTDA destino) {//copia el contenido de una cola con prioridad en la otra
-		ColaPrioridadTDA aux=new ColaPrioridadArr();
+		ColaPrioridadTDA aux=new ColaPrioridad();
 		aux.inicializarColaPrioridad();
 		while(!origen.colaVacia()) {
 			aux.acolarPrioridad(origen.primero(),origen.prioridad());

@@ -2,7 +2,7 @@ package impl;
 
 import api.ColaTDA;
 
-public class ColaArr implements ColaTDA {
+public class Cola implements ColaTDA {
 	int []a;
 	int indice;
 

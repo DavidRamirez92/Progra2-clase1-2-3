@@ -2,7 +2,7 @@ package impl;
 
 import api.ColaPrioridadTDA;
 
-public class ColaPrioridadArr implements ColaPrioridadTDA {
+public class ColaPrioridad implements ColaPrioridadTDA {
 
 	int a[];
 	int prioridad[];
