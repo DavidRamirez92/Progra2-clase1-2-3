@@ -4,34 +4,42 @@ import api.ConjuntoTDA;
 
 public class ConjuntoArr implements ConjuntoTDA {
     
-	@Override
+	int [] a;
+	int cant;
+	
 	public void inicializarConjunto() {
-		// TODO Auto-generated method stub
-
+		a=new int[100];
+		cant=0;
 	}
 
-	@Override
+
 	public void agregar(int x) {
-		// TODO Auto-generated method stub
+	    if(!this.pertenece(x)) {
+	    	a[cant]=x;
+	    	cant++;
+	    }
 
 	}
 
-	@Override
-	public void sacar() {
-		// TODO Auto-generated method stub
+	public void sacar(int x) {
+		int i=0;
+		while(i<cant&&a[i]!=x) {
+			i++;
+			
+		}
+		if(i<cant) {
+			a[i]=a[cant-1];
+			cant--;
+		}
 
 	}
 
-	@Override
 	public int elegir() {
-		// TODO Auto-generated method stub
-		return 0;
+		return a[cant-1];
 	}
 
-	@Override
 	public boolean conjuntoVacio() {
-		// TODO Auto-generated method stub
-		return false;
+		return(cant==0);
 	}
 
 	@Override

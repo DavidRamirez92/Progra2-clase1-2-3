@@ -14,7 +14,7 @@ public class ejercicioEclipse {
 		p1.apilar(1);
 		p1.apilar(2);
 		p1.apilar(3);
-		MetodPila.PasarPilaAPila(p1, p1);
+		MetodPila.PasarPilaAPila(p1, p2);
 		
 	
 
