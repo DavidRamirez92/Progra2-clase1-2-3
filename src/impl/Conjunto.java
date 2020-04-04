@@ -42,9 +42,12 @@ public class Conjunto implements ConjuntoTDA {
 		return(cant==0);
 	}
 
-	@Override
 	public boolean pertenece(int x) {
-		// TODO Auto-generated method stub
+		for(int i=0;i<cant;i++) {
+			if(a[i]==x) 
+			 return true;
+		}
+		
 		return false;
 	}
 
