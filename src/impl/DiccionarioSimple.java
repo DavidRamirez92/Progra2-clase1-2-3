@@ -38,7 +38,8 @@ public class DiccionarioSimple implements DiccionarioSimpleTDA {
 	public void eliminar(int clave) {
 		int pos=posClave(clave);
 		if(pos!=cant) {
-			elementos[pos]=elementos[cant-1];
+			if(pos+1!=cant)
+				elementos[pos]=elementos[cant-1];
 			cant--;
 		}
 	}
@@ -50,6 +51,7 @@ public class DiccionarioSimple implements DiccionarioSimpleTDA {
 
 	public ConjuntoTDA Claves() {
 	ConjuntoTDA aux=new Conjunto();
+	aux.inicializarConjunto();
 		for(int i=0;i<cant;i++) {
 			aux.agregar(elementos[i].clave);
 		}
